@@ -1,11 +1,15 @@
-import Heading from "./Heading/Heading";
+import Users from './components/users/users';
+import Menu from './components/menu/menu';
 export default function App() {
     return (
         <div>
-            <Heading title = 'title 1' desc = 'description 1'/>
-            <Heading title = 'title 2' desc = 'description 2'/>
-            {/*<Heading/>*/}
-            {/*<Heading/>*/}
+            <Menu
+                pages={['users page','commets page','posts page']}
+            classes ={['xxx','yyy']}/>
+            <Users/>
+            <Menu
+                pages={['about','team']}
+                classes={['asd','qwe']}/>
         </div>
     )
         ;
